@@ -6,11 +6,17 @@ Een zelfgemaakt geluidsproject voor de Ravensburger Tiptoi-pen, gebouwd met
 ## Structuur
 
 ```
-mijnproject.yaml     het projectbestand (product-id 900, welkomstgeluid, 3 scripts)
-audio/               geluidsbestanden: OGG Vorbis, mono, 22050 Hz
-oid-codes/           gegenereerde OID-codes als PNG (1200 dpi)
-mijnproject.gme      het bestand dat op de Tiptoi-pen gaat
+mijnproject.yaml         het projectbestand (product-id 900, welkomstgeluid, 3 scripts)
+mijnproject.codes.yaml   door tttool vastgelegde OID-codetoewijzing — niet weggooien!
+mijnproject.gme          het bestand dat op de Tiptoi-pen gaat
+audio/                   geluidsbestanden: OGG Vorbis, mono, 22050 Hz
+oid-codes/               OID-codes als PNG voor 1200 dpi-printers
+oid-codes/600dpi/        zelfde codes, maar voor 600 dpi-printers (pixel-size 2)
 ```
+
+> `mijnproject.codes.yaml` zorgt dat elke script-naam bij herbouwen dezelfde
+> OID-code houdt. Verwijder je dit bestand, dan kunnen de codes verschuiven en
+> moet je de afbeeldingen opnieuw printen.
 
 ## Stap voor stap
 
