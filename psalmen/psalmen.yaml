@@ -1,0 +1,30 @@
+# Psalmen die kinderen kennen — Tiptoi-project
+# Bouwen:  tttool assemble psalmen/psalmen.yaml
+# Codes:   tttool oid-codes psalmen/psalmen.yaml
+
+# Eigen product-ID, anders dan mijnproject (900), zodat beide GME-bestanden
+# tegelijk op de pen kunnen staan.
+product-id: 901
+
+comment: Psalmen die kinderen kennen
+
+# Speelt zodra je het START-logo van dit product aantikt.
+welcome: welkom
+
+# Audiobestanden staan naast dit yaml-bestand in audio/
+media-path: audio/%s
+
+# Elke psalm krijgt een eigen OID-code om aan te tikken.
+scripts:
+  psalm42:
+    - P(psalm42)
+  psalm84:
+    - P(psalm84)
+  psalm100:
+    - P(psalm100)
+  psalm116:
+    - P(psalm116)
+  psalm134:
+    - P(psalm134)
+  psalm150:
+    - P(psalm150)
