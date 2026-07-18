@@ -1,0 +1,26 @@
+# Mijn eigen Tiptoi-project
+# Bouwen:  tttool assemble mijnproject.yaml   -> mijnproject.gme
+# Codes:   tttool oid-codes mijnproject.yaml  -> PNG's op 1200 dpi
+
+# Product-ID 900 valt buiten de reeks van officiële Ravensburger-producten,
+# dus dit botst niet met bestaande boeken of spellen op de pen.
+product-id: 900
+
+comment: Mijn eigen Tiptoi audioproject
+
+# Dit geluid speelt als je het "aan"-logo (de power-knop van dit product) aantikt.
+welcome: welkom
+
+# Waar tttool de audiobestanden zoekt; %s wordt de naam uit de scripts.
+# De extensie (.ogg) wordt automatisch gevonden.
+media-path: audio/%s
+
+# Elke naam hieronder wordt een eigen OID-code (afdrukbaar plaatje).
+# P(x) betekent: speel audiobestand x af.
+scripts:
+  hond:
+    - P(hond)
+  kat:
+    - P(kat)
+  vogel:
+    - P(vogel)
