@@ -66,6 +66,20 @@ tttool play mijnproject.yaml     # interactieve simulator op je computer
 
 ### 4. OID-codes genereren en printen
 
+**Makkelijkste manier — de kant-en-klare PDF:**
+
+```bash
+tttool oid-table mijnproject.yaml    # -> mijnproject.pdf
+```
+
+Dit maakt één PDF met alle codes op exact de juiste grootte (3×3 cm) met
+labels eronder. Print die vanuit Adobe Reader of je browser met
+schaal-instelling **"Werkelijke grootte" / "Actual size" / 100%** — nooit
+"Aanpassen aan pagina". Meet na het printen een vakje na: het moet precies
+3 cm zijn.
+
+**Losse PNG's per code:**
+
 ```bash
 tttool oid-codes mijnproject.yaml
 ```
