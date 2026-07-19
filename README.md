@@ -101,8 +101,13 @@ daarna spelen de andere codes hun geluid.
 lagere resolutie én een dikkere puntgrootte, bijvoorbeeld voor 600 dpi:
 
 ```bash
-tttool --dpi 600 --pixel-size 2 oid-codes mijnproject.yaml
+tttool --dpi 600 --pixel-size 2 oid-codes mijnproject.yaml   # losse PNG's
+tttool --dpi 600 --pixel-size 2 oid-table mijnproject.yaml   # print-klare PDF
 ```
+
+Kant-en-klaar in deze repo: `mijnproject-600dpi.pdf` en
+`psalmen/psalmen-600dpi.pdf` — ook deze op **100% / werkelijke grootte**
+printen.
 
 - `--dpi 600` maakt het patroon passend voor 600 dpi-printers.
 - `--pixel-size 2` maakt elke punt 2×2 pixels, zodat hij groot genoeg blijft.
